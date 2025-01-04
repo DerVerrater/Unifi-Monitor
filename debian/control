@@ -8,9 +8,9 @@ Build-Depends: debhelper-compat (= 13),
                golang-any,
                golang-github-rs-zerolog-dev
 Standards-Version: 4.6.0
-Vcs-Browser: https://salsa.debian.org/go-team/packages/unifi-monitor
-Vcs-Git: https://salsa.debian.org/go-team/packages/unifi-monitor.git
-Homepage: https://github.com/DerVerrater/Unifi-Monitor
+Vcs-Browser: https://github.com/DerVerrater/Unifi-Monitor
+Vcs-Git: https://github.com/DerVerrater/Unifi-Monitor.git
+Homepage: https://github.com/authrequest/Unifi-Monitor
 Rules-Requires-Root: no
 XS-Go-Import-Path: github.com/DerVerrater/Unifi-Monitor
 
