@@ -1,0 +1,8 @@
+
+## Debian Packaging
+
+There's a Go dependency issue, specific to Debian packaging:
+
+This program uses `github.com/bensch777/discord-webhook-golang`, but that doesn't have a matching .deb in the Debian archives. Debian wants to ensure that no Internet connection is required to build **all** software. Since this package can't pull down all it's dependencies with `apt`, the solutions we have are to break policy. Unless this is intended to land in the official Debian repos, that doesn't matter.
+
+A package whose build requires Internet access is still a valid package, it's just not allowed into Debian itself.
