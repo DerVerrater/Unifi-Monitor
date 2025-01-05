@@ -1,8 +1,23 @@
+# Debian Packaging
 
-## Debian Packaging
+## Missing Debian dependency `github.com/bensch777/discord-webhook-golang`
 
-There's a Go dependency issue, specific to Debian packaging:
+This program uses `github.com/bensch777/discord-webhook-golang`, but that doesn't have a matching .deb package in the Debian archives. However, Debian wants to ensure that no Internet connection is required to build **all** software. Since this package can't pull down all it's dependencies with `apt`, the solutions we have are... ugly.
 
-This program uses `github.com/bensch777/discord-webhook-golang`, but that doesn't have a matching .deb in the Debian archives. Debian wants to ensure that no Internet connection is required to build **all** software. Since this package can't pull down all it's dependencies with `apt`, the solutions we have are to break policy. Unless this is intended to land in the official Debian repos, that doesn't matter.
+**The Options:**
 
-A package whose build requires Internet access is still a valid package, it's just not allowed into Debian itself.
+1. Break policy: `go get` in spite of the prohibition.
+2. Create and upload a package for the dependency
+3. Vendor the dependencies as a "patch"
+
+Breaking policy will disqualify this manifest from submission to the official Debian archives. This is fine, since the quality is certainly too low to bother the maintainers with it. I can fix this up later, if and when it's wanted.
+
+Uploading the dependency is the only correct answer, but again I'm not prepared to submit for inclusion into Debian.
+
+Vendoring the dependencies as a "patch" is possibly the dumbest solution, but at least it guarantees reproducible builds and might technically qualify for inclusion into the official archives.
+
+## Vendoring Patch
+
+I've chosen to implement option 3: Vendor as a "patch".
+
+This package, for now, includes a ~6.5MB patch file that `dpkg-source` will unpack into the build directory. These contain all the dependencies -- including the one that *does* have a Debian version (golang-github-rs-zerolog-dev)
