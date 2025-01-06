@@ -1,3 +1,9 @@
+unifi-monitor (0.1-1) UNRELEASED; urgency=low
+
+  * Experimental package manifest, now with version numbers from upstream!
+
+ -- Robert Garrett <robertgarrett404@gmail.com>  Mon, 06 Jan 2025 17:30:00 -0600
+
 unifi-monitor (0.0~git20250105.9d5b8a64-1) UNRELEASED; urgency=low
 
   * Experimental package manifest

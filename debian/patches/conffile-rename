@@ -14,14 +14,14 @@ Bug: https://github.com/authrequest/Unifi-Monitor/issues
 Forwarded: no
 Last-Update: 2025-01-06
 
---- unifi-monitor-0.0~git20250105.9d5b8a64.orig/all_products.go
-+++ unifi-monitor-0.0~git20250105.9d5b8a64/all_products.go
-@@ -343,7 +343,7 @@ func readEnv(key, defaultValue string) s
+--- unifi-monitor-0.1.orig/all_products.go
++++ unifi-monitor-0.1/all_products.go
+@@ -342,7 +342,7 @@ func readEnv(key, defaultValue string) s
  		return value
  	}
  
 -	configFile := "/etc/config.yml"
 +	configFile := "/etc/unifi-monitor.yml"
- 	if _, err := os.Stat(configFile); err == nil {
- 		data, err := ioutil.ReadFile(configFile)
- 		if err == nil {
+ 	data, err := os.ReadFile(configFile)
+ 	if err == nil {
+ 		var config Config
