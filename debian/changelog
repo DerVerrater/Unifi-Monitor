@@ -1,5 +1,5 @@
-unifi-monitor (0.0~git20250101.d0bd3ff6-1) UNRELEASED; urgency=low
+unifi-monitor (0.0~git20250105.9d5b8a64-1) UNRELEASED; urgency=low
 
   * Experimental package manifest
 
- -- Robert Garrett <robertgarrett404@gmail.com>  Wed, 01 Jan 2025 18:20:00 -0600
+ -- Robert Garrett <robertgarrett404@gmail.com>  Wed, 06 Jan 2025 14:40:00 -0600
