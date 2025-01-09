@@ -1,3 +1,9 @@
+unifi-monitor (0.1+git20250108.db24c22a-2) UNRELEASED; urgency=low
+
+  * Now with SystemD service unit!
+
+ -- Robert Garrett <robertgarrett404@gmail.com>  Wed, 08 Jan 2025 19:10:00 -0600
+
 unifi-monitor (0.1+git20250108.db24c22a-1) UNRELEASED; urgency=low
 
   * Upstream has renamed the config file, so the patch can be dropped.
