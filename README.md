@@ -42,7 +42,11 @@ Ensure you have the following installed:
 
 ## Usage
 
-Before running the project, make sure to configure the Discord webhook URL. Open the `all_products.go` file and set the `DiscordWebhookURL` variable
+Before running the program, make sure to configure the Discord webhook URL. 
+
+1. Environment variable `DISCORD_WEBHOOK_URL` set on the command line.
+2. Config file `/etc/unifi-monitor.yml`, with the key `DISCORD_WEBHOOK_URL:`
+
 
 Run the project:
 
@@ -56,7 +60,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## License
 
-Distributed under the [MIT License](LICENSE). See `LICENSE` for more information.
+Distributed under the [GNU GPL v3.0](LICENSE). See `LICENSE` for more information.
 
 ---
 
