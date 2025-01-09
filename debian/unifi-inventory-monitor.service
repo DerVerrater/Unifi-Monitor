@@ -1,0 +1,15 @@
+[Unit]
+Description=Unifi web store new-inventory monitoring Discord bot
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/Unifi-Monitor
+Restart=always
+RestartSec=2s
+User=www-data
+Group=www-data
+WorkingDirectory=/var/unifi-monitor
+
+[Install]
+WantedBy=multi-user.target
