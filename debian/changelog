@@ -1,3 +1,10 @@
+unifi-monitor (0.1+git20250108.db24c22a-1) UNRELEASED; urgency=low
+
+  * Upstream has renamed the config file, so the patch can be dropped.
+    Funny git release because there isn't a new release tag, yet.
+
+ -- Robert Garrett <robertgarrett404@gmail.com>  Wed, 08 Jan 2025 18:20:00 -0600
+
 unifi-monitor (0.1-1) UNRELEASED; urgency=low
 
   * Experimental package manifest, now with version numbers from upstream!
