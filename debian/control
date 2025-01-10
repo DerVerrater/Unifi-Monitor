@@ -12,7 +12,7 @@ Vcs-Browser: https://github.com/DerVerrater/Unifi-Monitor
 Vcs-Git: https://github.com/DerVerrater/Unifi-Monitor.git
 Homepage: https://github.com/DerVerrater/Unifi-Monitor
 Rules-Requires-Root: no
-XS-Go-Import-Path: github.com/DerVerrater/Unifi-Monitor
+XS-Go-Import-Path: github.com/authrequest/Unifi-Monitor
 
 Package: unifi-monitor
 Architecture: any
