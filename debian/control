@@ -20,3 +20,5 @@ Depends: ${misc:Depends},
          ${shlibs:Depends}
 Built-Using: ${misc:Built-Using}
 Description: UniFi new-products monitor Discord bot
+ This program monitors the UniFi products page for new inventory and sends
+ alerts to your Discord server!
