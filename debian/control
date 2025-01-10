@@ -3,9 +3,10 @@ Maintainer: Robert Garrett <robertgarrett404@gmail.com>
 Section: golang
 Testsuite: autopkgtest-pkg-go
 Priority: optional
-Build-Depends: debhelper-compat (= 13),
-               dh-golang,
-               golang-any,
+Build-Depends: 
+  debhelper-compat (= 13),
+  dh-golang,
+  golang-any,
 Standards-Version: 4.6.0
 Vcs-Browser: https://github.com/DerVerrater/Unifi-Monitor
 Vcs-Git: https://github.com/DerVerrater/Unifi-Monitor.git
@@ -15,8 +16,9 @@ XS-Go-Import-Path: github.com/authrequest/Unifi-Monitor
 
 Package: unifi-monitor
 Architecture: any
-Depends: ${misc:Depends},
-         ${shlibs:Depends}
+Depends:
+  ${misc:Depends},
+  ${shlibs:Depends}
 Built-Using: ${misc:Built-Using}
 Description: UniFi new-products monitor Discord bot
  This program monitors the UniFi products page for new inventory and sends
