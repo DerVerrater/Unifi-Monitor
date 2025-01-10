@@ -1,3 +1,14 @@
+unifi-monitor (0.1+git20250108.db24c22a-3) UNRELEASED; urgency=low
+
+  * Package adjustments to make Lintian happier.
+    Fixed debian/control's homepage value
+    Fixed XS-Go-Import-Path to point to upstream, not the package repo
+    Fixed debian/upstream/metadata to record upstream's metadata
+    Added a copyright file
+    Added long description to debian/control
+
+ -- Robert Garrett <robertgarrett404@gmail.com>  Fri, 10 Jan 2025 11:20:00 -0600
+
 unifi-monitor (0.1+git20250108.db24c22a-2) UNRELEASED; urgency=low
 
   * Now with SystemD service unit!
