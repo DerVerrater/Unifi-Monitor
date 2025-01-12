@@ -1,3 +1,12 @@
+unifi-monitor (0.1+git20250108.db24c22a-4) UNRELEASED; urgency=low
+
+  * Fix: Create the work directory, dummy.
+    .
+    A postinstall script has been added to create the working directory, as
+    well as a `unifi-user` user and group. The program now runs as that, too.
+
+ -- Robert Garrett <robertgarrett404@gmail.com>  Sat, 11 Jan 2025 20:25:00 -0600
+
 unifi-monitor (0.1+git20250108.db24c22a-3) UNRELEASED; urgency=low
 
   * Package adjustments to make Lintian happier.
