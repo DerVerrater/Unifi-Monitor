@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+if ! getent group unifi-monitor >/dev/null; then
+    addgroup --system unifi-monitor
+fi
+
+if ! getent passwd unifi-monitor >/dev/null; then
+    adduser --system --ingroup unifi-monitor --home /var/unifi-monitor --shell /bin/false unifi-monitor
+fi
+
+install -o unifi-monitor -g unifi-monitor -m 755 -d /var/unifi-monitor
+
+#DEBHELPER#
